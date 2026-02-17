@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR/VR Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Floating Background Elements -->
+    <div class="floating-background">
+        <!-- Unity/Cube Logo -->
+        <svg class="float-icon float-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path
+                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+            </path>
+            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+        </svg>
+
+        <!-- VR Headset -->
+        <svg class="float-icon float-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20 7h-7l-1 2H5L2 7v10h20V7z"></path>
+            <path d="M10 11h4"></path>
+            <circle cx="9" cy="11" r="1.5"></circle>
+            <circle cx="15" cy="11" r="1.5"></circle>
+        </svg>
+
+        <!-- Smartphone -->
+        <svg class="float-icon float-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+            <line x1="12" y1="18" x2="12.01" y2="18"></line>
+        </svg>
+
+        <!-- 3D Shape (Dodecahedron-ish) -->
+        <svg class="float-icon float-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+
+        <!-- Unity-like Symbol -->
+        <svg class="float-icon float-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="12 2 2 22 22 22 12 2"></polygon>
+            <line x1="12" y1="12" x2="12" y2="22"></line>
+        </svg>
+    </div>
+
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">DevPortfolio</a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#ar-projects">AR Projects</a></li>
+                    <li><a href="#vr-projects">VR Projects</a></li>
+                    <li><a href="#2d-projects">2D Projects</a></li>
+                    <li><a href="#3d-projects">3D Projects</a></li>
+                    <li><a href="#360-video">360 Video</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Toggle Navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="container hero-content">
+            <h1 class="hero-title">Crafting Immersive Realities</h1>
+            <p class="hero-subtitle">Specializing in AR & VR Development | Unity </p>
+            <a href="#ar-projects" class="btn btn-primary">View Projects</a>
+        </div>
+        <!-- 3D Rotating Element -->
+        <div class="hero-3d-container">
+            <div class="cube-3d">
+                <div class="cube-face cube-front">Unity</div>
+                <div class="cube-face cube-back">XR</div>
+                <div class="cube-face cube-right">AR</div>
+                <div class="cube-face cube-left">VR</div>
+                <div class="cube-face cube-top">C#</div>
+                <div class="cube-face cube-bottom">3D</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container about-content">
+            <div class="about-image-wrapper">
+                <img src="images/profile-placeholder.jpg" alt="Profile Photo" class="about-image">
+            </div>
+            <div class="about-text">
+                <h2 class="section-title about-title">About Me</h2>
+                <h3 class="about-subtitle">Hi, I'm Jishan</h3>
+                <p>
+                    I am a passionate AR/VR Developer with a knack for creating immersive digital experiences.
+                    With a background in computer science and a love for interactive storytelling, I bridge the gap
+                    between the physical and virtual worlds.
+                </p>
+                <p>
+                    My expertise lies in Unity, C#, 3D modeling, and web technologies. I love turning complex ideas into
+                    intuitive and engaging applications.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">🎮</div>
+                    <h3 class="skill-category">Engines</h3>
+                    <ul class="skill-list">
+                        <li>Unity</li>
+                        <li>Unreal Engine</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🔧</div>
+                    <h3 class="skill-category">SDKs</h3>
+                    <ul class="skill-list">
+                        <li>Meta XR SDK</li>
+                        <li>XR Interaction Toolkit</li>
+                        <li>ARCore/ARKit</li>
+                        <li>AR Foundation</li>
+                        <li>Vuforia</li>
+                        <li>Multiplayer XR Basics</li>
+                        <li>AI Integration (Convai)</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">💻</div>
+                    <h3 class="skill-category">Languages</h3>
+                    <ul class="skill-list">
+                        <li>C#</li>
+                        <li>C++</li>
+                        <li>HTML5</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">⚡</div>
+                    <h3 class="skill-category">Specialties</h3>
+                    <ul class="skill-list">
+                        <li>Shader Development</li>
+                        <li>Optimization for Quest</li>
+                        <li>Physics-based Interaction</li>
+                        <li>Animations</li>
+                        <li>Lighting & Rendering (URP)</li>
+                        <li>UI/UX for XR</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="ar-projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">Augmented Reality</h2>
+            <div class="projects-grid">
+                <!-- AR Project 1 Jungle Safari -->
+                <a href="https://youtube.com/shorts/aP1ZjNqNVuI?feature=share" target="_blank" class="project-card">
+                    <div class="card-image">
+                        <img src="images/ar-project-1.jpg" alt="AR Project 1" loading="lazy">
+                        <div class="card-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>AR Jungle Safari App</h3>
+                        <p>Explore, Play & Learn Alphabets in AR</p>
+                    </div>
+                </a>
+
+
+
+                <!-- AR Project 2  Kids Park Arcor-->
+                <a href="https://youtube.com/shorts/ILLPQSCessE?feature=share" target="_blank" class="project-card">
+                    <div class="card-image">
+                        <img src="images/ar-project-2.jpg" alt="AR Project 2" loading="lazy">
+                        <div class="card-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>AR Kids Park</h3>
+                        <p>Design Kids Playgrounds in Real-Scale AR</p>
+                    </div>
+                </a>
+
+
+                <!-- AR Project 3 Human Anatomy -->
+                <a href="javascript:void(0)" class="project-card">
+                    <div class="card-image">
+                        <img src="images/ar-project-4.jpg" alt="AR Project 4" loading="lazy">
+                        <div class="card-overlay">
+
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>AR Human Anatomy</h3>
+                        <p>Explore the Human Body in 3D AR</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="vr-projects" class="projects-section section-secondary">
+        <div class="container">
+            <h2 class="section-title">Virtual Reality</h2>
+            <div class="projects-grid">
+                <!-- VR Project 1 Ai language Trainer-->
+                <a href="https://youtu.be/ClmIvjLaSvE" target="_blank" class="project-card">
+                    <div class="card-image">
+                        <img src="images/vr-project-1.jpg" alt="VR Project 1" loading="lazy">
+                        <div class="card-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>AI Language Trainer</h3>
+                        <p>Practice Language Through Real Conversations</p>
+                    </div>
+                </a>
+
+                <!-- VR Project 2 Chemistry Lab -->
+                <a href="https://youtu.be/lNF7P5IcZjY" target="_blank" class="project-card">
+                    <div class="card-image">
+                        <img src="images/vr-project-2.jpg" alt="VR Project 2" loading="lazy">
+                        <div class="card-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Chemistry Lab</h3>
+                        <p>Fully immersive VR Chemistry Lab with 10+ high school experiments (CBSE & State syllabus)</p>
+                    </div>
+                </a>
+
+                <!-- VR Project 3 Physics Lab 1-->
+                <a href="https://youtu.be/pDtVQALpXYY" target="_blank" class="project-card">
+                    <div class="card-image">
+                        <img src="images/vr-project-3.jpg" alt="VR Project 3" loading="lazy">
+                        <div class="card-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Physics Lab 1</h3>
+                        <p>Fully immersive VR Physics Lab with 10+ experiments and demonstrations (CBSE & State
+                            syllabus)</p>
+                    </div>
+                </a>
+                <!-- VR Project 4 Physics Lab 2-->
+                <a href="https://youtu.be/v97lAry9Vok" target="_blank" class="project-card">
+                    <div class="card-image">
+                        <img src="images/vr-project-4.jpg" alt="VR Project 4" loading="lazy">
+                        <div class="card-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Physics Lab 2</h3>
+                        <p>Learn higher secondary physics with immersive VR demonstrations</p>
+                    </div>
+                </a>
+                <!-- VR Project 5 Biology Lab-->
+                <a href="https://youtu.be/4Q_WbnQh4V8" target="_blank" class="project-card">
+                    <div class="card-image">
+                        <img src="images/vr-project-5.jpg" alt="VR Project 5" loading="lazy">
+                        <div class="card-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Biology Lab</h3>
+                        <p>25+ higher secondary biology experiments brought to life in Virtual Reality</p>
+                    </div>
+                </a>
+                <!-- VR Project 6 Geography Lab-->
+                <a href="https://youtu.be/iXC1rEmVv5I" target="_blank" class="project-card">
+                    <div class="card-image">
+                        <img src="images/vr-project-6.jpg" alt="VR Project 6" loading="lazy">
+                        <div class="card-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Geography Lab</h3>
+                        <p>Interactive VR Geography Lab with 10+ Demonstrations with real experiences</p>
+                    </div>
+                </a>
+                <!-- VR Project 7 Beyond the Wall-->
+                <a href="https://youtu.be/8l5BgnmYU8s" target="_blank" class="project-card">
+                    <div class="card-image">
+                        <img src="images/vr-project-7.jpg" alt="VR Project 7" loading="lazy">
+                        <div class="card-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Beyond the Wall: From Ruins to Return</h3>
+                        <p>A symbolic VR experience tracing a journey from destruction to liberation</p>
+                    </div>
+                </a>
+                <!-- VR Project 8 Office vr-->
+                <a href="https://youtu.be/0ZHI8dpyn3U" target="_blank" class="project-card">
+                    <div class="card-image">
+                        <img src="images/vr-project-8.jpg" alt="VR Project 8" loading="lazy">
+                        <div class="card-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Office Organiser Vr</h3>
+                        <p>An interactive VR experience to place, customize, and organize office interiors in real time.
+                        </p>
+                    </div>
+                </a>
+                <!-- VR Project 9 Kaaba-->
+                <a href="https://youtu.be/eTKnV2cIiyw" target="_blank" class="project-card">
+                    <div class="card-image">
+                        <img src="images/vr-project-9.jpg" alt="VR Project 9" loading="lazy">
+                        <div class="card-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Virtual Kaaba</h3>
+                        <p>A sacred VR walkthrough experience of the Holy Kaaba and surrounding spiritual landmarks.</p>
+                    </div>
+                </a>
+                <!-- VR Project 10 Room Furniture and light-->
+                <a href="https://www.youtube.com/watch?v=EXAMPLE6" target="_blank" class="project-card">
+                    <div class="card-image">
+                        <img src="images/vr-project-10.jpg" alt="VR Project 10" loading="lazy">
+                        <div class="card-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>VisualRoom VR</h3>
+                        <p>An interactive VR experience to visualize and customize room furniture and lighting in real
+                            time.</p>
+                    </div>
+                </a>
+                <!-- VR Project 11 Suprabatham-->
+                <a href="https://youtu.be/rUzXVkMtt5Y" target="_blank" class="project-card">
+                    <div class="card-image">
+                        <img src="images/vr-project-11.jpg" alt="VR Project 11" loading="lazy">
+                        <div class="card-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Suprabatham Promo</h3>
+                        <p>Suprabatham XR | A Narrative VR News Experience</p>
+                    </div>
+                </a>
+                <!-- VR Project 12 Bathroom tile-->
+                <a href="https://www.youtube.com/watch?v=EXAMPLE6" target="_blank" class="project-card">
+                    <div class="card-image">
+                        <img src="images/vr-project-12.jpg" alt="VR Project 12" loading="lazy">
+                        <div class="card-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Bathroom tile Customiser</h3>
+                        <p>An interactive VR experience to visualize and customize bathroom tiles in real time.</p>
+                    </div>
+                </a>
+                <!-- VR Project 13 2BHK House-->
+                <a href="https://www.youtube.com/watch?v=EXAMPLE6" target="_blank" class="project-card">
+                    <div class="card-image">
+                        <img src="images/vr-project-13.jpg" alt="VR Project 13" loading="lazy">
+                        <div class="card-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>2BHK House Interior </h3>
+                        <p>An interactive VR experience to visualize 2BHK house interiors.</p>
+                    </div>
+                </a>
+                <!-- VR Project 14 Ev Assemble-->
+                <a href="javascript:void(0)" class="project-card">
+                    <div class="card-image">
+                        <img src="images/vr-project-14.jpg" alt="VR Project 14" loading="lazy">
+                        <div class="card-overlay">
+
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Ev Assemble</h3>
+                        <p>An interactive VR experience to assemble an EV Battery Parts in real time.</p>
+                    </div>
+                </a>
+                <!-- VR Project 15 Pharmacology-->
+                <a href="javascript:void(0)" class="project-card">
+                    <div class="card-image">
+                        <img src="images/vr-project-15.jpg" alt="VR Project 15" loading="lazy">
+                        <div class="card-overlay">
+
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Pharmacology Lab</h3>
+                        <p>Rhythm game prototype</p>
+                    </div>
+                </a>
+                <!-- VR Project 16 Biology Lab-->
+                <a href="javascript:void(0)" class="project-card">
+                    <div class="card-image">
+                        <img src="images/vr-project-16.jpg" alt="VR Project 16" loading="lazy">
+                        <div class="card-overlay">
+
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Virtual Biology Museum</h3>
+                        <p>Immersive biology tour,An Immersive Life Museum</p>
+                    </div>
+                </a>
+                <!-- VR Project 17 History Museum-->
+                <a href="javascript:void(0)" class="project-card">
+                    <div class="card-image">
+                        <img src="images/vr-project-17.jpg" alt="VR Project 17" loading="lazy">
+                        <div class="card-overlay">
+
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Virtual History Museum</h3>
+                        <p>Immersive history tour</p>
+                    </div>
+                </a>
+                <!-- VR Project 18 Geological Museum-->
+                <a href="javascript:void(0)" class="project-card">
+                    <div class="card-image">
+                        <img src="images/vr-project-18.jpg" alt="VR Project 18" loading="lazy">
+                        <div class="card-overlay">
+
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Virtual Geological Museum</h3>
+                        <p>Immersive geological tour</p>
+                    </div>
+                </a>
+                <!-- VR Project 19 TrueSpace VR-->
+                <a href="javascript:void(0)" class="project-card">
+                    <div class="card-image">
+                        <img src="images/vr-project-19.jpg" alt="VR Project 19" loading="lazy">
+                        <div class="card-overlay">
+
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>TrueSpace VR</h3>
+                        <p>Real Lighting. Real Scale. Real Experience</p>
+                    </div>
+                </a>
+                <!-- VR Project 20 Virtual Nature Experiences-->
+                <a href="javascript:void(0)" class="project-card">
+                    <div class="card-image">
+                        <img src="images/vr-project-20.jpg" alt="VR Project 20" loading="lazy">
+                        <div class="card-overlay">
+
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Virtual Nature Experiences</h3>
+                        <p>Explore diverse natural environments in an immersive VR experience.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="2d-projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">2D Projects</h2>
+            <div class="projects-grid">
+                <!-- 2D Project 1 snake and melon-->
+                <a href="#" class="project-card">
+                    <div class="card-image">
+                        <img src="images/2d-project-1.jpg" alt="2D Project 1" loading="lazy">
+                        <div class="card-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Snake and Melon</h3>
+                        <p>Classic pixel art game</p>
+                    </div>
+                </a>
+                <!-- 2D Project 2 interactive 2d magazine-->
+                <a href="#" class="project-card">
+                    <div class="card-image">
+                        <img src="images/2d-project-2.jpg" alt="2D Project 2" loading="lazy">
+                        <div class="card-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Interactive Magazine</h3>
+                        <p>A 45-page magazine transformed into a fully interactive AI & AR experience.</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="3d-projects" class="projects-section section-secondary">
+        <div class="container">
+            <h2 class="section-title">3D Projects</h2>
+            <div class="projects-grid">
+                <!-- 3D Project 1 desktop furniture and light visualiser-->
+                <a href="#" class="project-card">
+                    <div class="card-image">
+                        <img src="images/3d-project-1.jpg" alt="3D Project 1" loading="lazy">
+                        <div class="card-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Interior Visualiser</h3>
+                        <p>Furniture and Light Visualiser for Desktop App</p>
+                    </div>
+                </a>
+
+                <!-- 3D Project 2 mobile bathroom tile customiser-->
+                <a href="#" class="project-card">
+                    <div class="card-image">
+                        <img src="images/3d-project-2.jpg" alt="3D Project 2" loading="lazy">
+                        <div class="card-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Bathroom Tile Customiser</h3>
+                        <p>Preview and confirm tiles before purchase in 3D by Mobile App</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+    <section id="360-video" class="projects-section section-secondary">
+        <div class="container">
+            <h2 class="section-title">360 Video</h2>
+            <div class="projects-grid">
+                <!-- 360 video 1 ooty Brindhavan Garden-->
+                <a href="#" class="project-card">
+                    <div class="card-image">
+                        <img src="images/360-video-1.jpg" alt="360 Video 1" loading="lazy">
+                        <div class="card-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Brindavan Garden 360° Experience</h3>
+                        <p>Explore the Ooty Brindavan Garden in 360° — VR & Desktop</p>
+                    </div>
+                </a>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container contact-content">
+            <h2 class="section-title">Let's Create Something Amazing</h2>
+            <p class="contact-tagline">Ready to bring your AR/VR vision to life? I'd love to hear from you!</p>
+
+            <div class="contact-details">
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <h3>Location</h3>
+                    <p>Malappuram, Kerala, India</p>
+                </div>
+                <div class="contact-item contact-email">
+                    <div class="contact-icon">📧</div>
+                    <h3>Email</h3>
+                    <p><a href="mailto:jishank.dev@gmail.com">jishank.dev@gmail.com</a></p>
+                    <button class="copy-btn" onclick="copyToClipboard('jishank.dev@gmail.com', this)">
+                        <span class="copy-text">Copy</span>
+                        <span class="copied-text">Copied!</span>
+                    </button>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📱</div>
+                    <h3>Phone</h3>
+                    <p><a href="tel:+918281815378">+91 82818 15378</a></p>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">💼</div>
+                    <h3>LinkedIn</h3>
+                    <p><a href="https://www.linkedin.com/in/jishan-k-761a88235" target="_blank">Connect with me</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 AR/VR Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
